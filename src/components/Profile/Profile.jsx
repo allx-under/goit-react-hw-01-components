@@ -51,7 +51,7 @@ const Image = styled.img`
     border: 1px solid #03BFCB;
 	border-radius: 50%;
 	padding: 7px;
-`
+`;
 
 const Stats = styled.ul`
 background-color: #1F1A36;
@@ -60,7 +60,7 @@ background-color: #1F1A36;
     justify-content:space-evenly;
 	margin-top: 30px;
     list-style:none;
-`
+`;
 
 const StatsItem = styled.li`
 border: 1px solid #2D2747;
@@ -68,10 +68,9 @@ border: 1px solid #2D2747;
 	display: inline-block;
 	font-size: 12px;
 	padding: 7px;
-
-`
+`;
 
 const Name = styled.p`
 font-weight:700;
 font-size:20px;
-`
+`;
