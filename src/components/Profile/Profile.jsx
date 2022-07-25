@@ -1,5 +1,6 @@
 import React from "react";
-import styled from "styled-components"
+import styled from "styled-components";
+import PropTypes from 'prop-types';
 
 export const Profile = ({username, tag, location, avatar, stats}) => {
     return (<Wrapper>
@@ -30,6 +31,18 @@ export const Profile = ({username, tag, location, avatar, stats}) => {
     </StatsItem>
   </Stats>
 </Wrapper>)
+}
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats:PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
 }
 
 const Wrapper = styled.div`
@@ -74,3 +87,4 @@ const Name = styled.p`
 font-weight:700;
 font-size:20px;
 `;
+
